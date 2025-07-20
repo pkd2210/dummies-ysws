@@ -1,3 +1,21 @@
+<script lang="ts">
+	let clicks = 0;
+	let timeout: ReturnType<typeof setTimeout>;
+	function dummyclicks() {
+		clicks++;
+		
+		clearTimeout(timeout);
+		timeout = setTimeout(() => {
+			clicks = 0;
+		}, 2000);
+
+		if (clicks >= 7) {
+			clicks = 0;
+			window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1", "_blank");
+		}
+	}
+</script>
+
 <div class="absolute inset-0 -z-10 h-full w-full bg-orange-100">
 <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
 </div>
@@ -6,9 +24,10 @@
 <div class="flex flex-col items-center px-4">
 	<div class="relative flex items-center justify-center">
 		<img src="/images/For Dummies logo.png" alt="Logo" class="absolute w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain -translate-y-8 sm:-translate-y-12 md:-translate-y-15 -translate-x-35 sm:-translate-x-32 md:-translate-x-85 rotate-325 hover:scale-125 transition-transform duration-300"/>
-		<h1 class="text-4xl sm:text-6xl md:text-8xl text-amber-500 font-oi text-center" style="font-family: 'Oi'">DUMMIES</h1>
+		<h1 class="text-center">
+			<button type="button" on:click={dummyclicks} class="text-4xl sm:text-6xl md:text-8xl text-amber-500 font-oi text-center" style="font-family: 'Oi'">DUMMIES</button>
+		</h1>
 	</div>
-
     <div class="h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent my-4 sm:my-8 mx-auto w-3/4"></div>
 	<div class="flex flex-col sm:flex-row gap-4 items-center">
 		<button class="shadow-lg/20 px-4 py-3 sm:px-6 sm:py-7 bg-amber-500 text-white rounded-lg font-extrabold hover:scale-105 transform transition-transform text-sm sm:text-base">SIGN UP</button>
