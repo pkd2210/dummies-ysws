@@ -4,4 +4,9 @@
 
 @theme {
   --font-family-oi: 'Oi', serif;
+  --font-family-kirang-haerang: 'Kirang Haerang', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
 }
