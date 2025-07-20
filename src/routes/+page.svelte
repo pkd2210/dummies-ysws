@@ -24,9 +24,8 @@
 </div>
 </a>
 
-
 </div>
-<div class="relative flex flex-col items-center p-4 sm:p-22">
+<div class="relative flex flex-col items-center p-4 sm:p-22 -mt-1">
 <div class="absolute inset-0 -z-10 h-full w-full bg-gray-50">
 <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
 </div>
