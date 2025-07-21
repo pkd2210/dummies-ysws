@@ -50,3 +50,4 @@ To participate, join the [Hack Club Slack](https://hackclub.com/slack) and head 
 However, this YSWS is currently a work in progress, so please be patient as we work on it. More information will be posted in the channel soon.  
 
 ## More information
+For more information, you can check out the [dummies YSWS website.](https://https://dummies-ysws.vercel.app/)
