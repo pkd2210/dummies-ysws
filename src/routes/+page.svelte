@@ -107,8 +107,8 @@
 
 <h2 class="text-3xl sm:text-4xl md:text-6xl py-6 sm:py-12 text-amber-500 font-oi text-center px-4" style="font-family: 'Oi'">FAQ</h2>
 <div class="py-8 text-amber-700 text-lg sm:text-2xl md:text-4xl text-center px-2" style="font-family: 'Kirang Haerang'">
-<strong><li>What Count as a New proggraming lanuage?</li></strong><br>Any proggraming language that you never tried to learn, and never used for any project<br><br><br>
-<strong><li>Can i double dip with SOM?</li></strong><br>Answear Soon...<br><br><br>
+<strong><li>What Count as a New programing lanuage?</li></strong><br>Any programing language that you never tried to learn, and never used for any project<br><br><br>
+<strong><li>Can i double dip with SOM?</li></strong><br>Answer Soon...<br><br><br>
 <strong><li>What the time requirment?</li></strong><br>At least 10 hours<br><br><br>
 </div>
 </div>
