@@ -45,4 +45,5 @@ The aim of this YSWS is for you to learn a new language and ship a project with 
 In return for doing this, we will ship you any book you want from [dummies.com](https://www.dummies.com/).
 
 ## How do I participate?
-To participate, join the [Hack Club Slack](https://hackclub.com/slack) and head to the [#dummies-ysws](https://hackclub.slack.com/archives/C096M3EV67M) channel.
+To participate, join the [Hack Club Slack](https://hackclub.com/slack) and head to the [#dummies-ysws](https://hackclub.slack.com/archives/C096M3EV67M) channel.  
+However, this YSWS is currently a work in progress, so please be patient as we work on it. More information will be posted in the channel soon.  
