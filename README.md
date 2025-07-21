@@ -42,3 +42,4 @@ You can preview the production build with `npm run preview`.
 
 The dummies YSWS is a YSWS (You ship We Ship) conceptualised by [@peleg2210](https://hackclub.slack.com/team/U091DE0M4NB).  
 The aim of this YSWS is for you to learn a new language and ship a project with it.  
+In return for doing this, we will ship you any book you want from [dummies.com](https://www.dummies.com/).
