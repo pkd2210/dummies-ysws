@@ -67,7 +67,7 @@
 		<button class="shadow-lg/20 px-4 py-3 sm:px-6 sm:py-7 bg-amber-500 text-white rounded-lg font-extrabold hover:scale-105 transform transition-transform text-sm sm:text-base">SIGN UP</button>
 		<button class="shadow-lg/20 px-4 py-3 sm:px-6 sm:py-7 bg-amber-500 text-white rounded-lg font-extrabold hover:scale-105 transform transition-transform text-sm sm:text-base">SUBMIT PROJECT</button>
 	</div>
-	<div class="mt-4 sm:mt-8 text-gray-600 text-sm sm:text-base transition-colors">Join us at <a href="https://hackclub.slack.com/archives/C096M3EV67M" target="_blank" class="text-blue-500">#dummies</a></div>
+	<a class="mt-4 sm:mt-8 text-gray-600 text-sm sm:text-base transition-colors opacity-75" href="https://hackclub.slack.com/archives/C096M3EV67M" target="_blank" >Join us at <span class="text-blue-500">#dummies</span></a>
 </div>
 <a href="#WAWD">
 <div class="pt-4 sm:pt-8">
