@@ -37,3 +37,7 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 # Dummies YSWS
+
+## What is this?
+
+The dummies YSWS is a YSWS (You ship We Ship) conceptualised by [@peleg2210](https://hackclub.slack.com/team/U091DE0M4NB).  
