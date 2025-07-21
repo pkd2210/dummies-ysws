@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	let clicks = 0;
 	let timeout: ReturnType<typeof setTimeout>;
 	function dummyclicks() {
@@ -14,6 +16,38 @@
 			window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1", "_blank");
 		}
 	}
+
+	let language = "";
+	let description = "";
+
+	async function getIdea() {
+		const randomNumber = Math.floor(Math.random()*20) + 1;
+		const request = await fetch("https://ai.hackclub.com/chat/completions", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify({
+				"messages": [{"role": "user", "content": `Generate a unique, creative, and uncommon project idea for a random programming language. To ensure it is randomized, use this list only: [\"JavaScript\", \"TypeScript\", \"Python\", \"Java\", \"C#\", \"C++\", \"C\", \"Go\", \"Swift\", \"Kotlin\", \"Ruby\", \"PHP\", \"Dart\", \"Rust\", \"Scala\", \"Objective-C\", \"Perl\", \"Lua\", \"R\", \"Groovy\"]. Pick the ${randomNumber} Item in the list. The project must be a practical, visual, or web-based project — NOT a purely command-line or backend-only project, and reccomended not a phone application, recommended sociel platfomrs (like discord, slack...) bots, websites, or games. DO NOT pick Haskell, Lisp, Elm, or other purely functional or academic languages. The project must take a teenager about 5+ hours and be realistic to build. Format the response ONLY as JSON in this structure: [ { \"language\": \"(the language)\", \"project\": \"(The project description)\" } ] and output absolutely nothing else, not additinal text, no nothing!.`}]
+			})
+		});
+		if (!request.ok) {
+			throw new Error(`Error ${request.status}`);
+		}
+		const response = await request.json();
+		let contentInString = response.choices[0].message.content;
+		contentInString = contentInString.replace(/```json\n?/g, '').replace(/```/g, '').trim();
+		const content = JSON.parse(contentInString);
+		language = content[0].language;
+		description = content[0].project;
+		const aiTextElem = document.getElementById("aitext");
+		if (aiTextElem) {
+			aiTextElem.innerHTML = `<strong>Language:</strong><br>${language}<br><br><br><strong>Description:</strong><br>${description}`;
+		}
+	}
+	onMount(() => {
+		getIdea();
+	});
 </script>
 
 <div class="absolute inset-0 -z-10 h-full w-full bg-orange-100">
@@ -45,7 +79,7 @@
 
 </div>
 <div class="relative flex flex-col items-center p-4 sm:p-22 -mt-1">
-<div class="absolute inset-0 -z-10 h-full w-full bg-gray-50">
+<div class="absolute inset-0 -z-10 h-full w-full bg-purple-100">
 <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
 </div>
 
@@ -54,6 +88,18 @@
 
 </div>
 
+<!--asking the ai, for a idea and a project-->
+<div class="relative flex flex-col items-center p-4 sm:p-22 -mt-1">
+<div class="absolute inset-0 -z-10 h-full w-full bg-gray-50">
+<div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
+</div>
+
+<h2 class="text-3xl sm:text-4xl md:text-6xl py-6 sm:py-12 text-amber-500 font-oi text-center px-4" style="font-family: 'Oi'">PROJECT SUGGESTION</h2>
+<div id="aitext" class="py-8 text-amber-700 text-lg sm:text-2xl md:text-4xl text-center px-2" style="font-family: 'Kirang Haerang'"><strong>Language:</strong><br>null<br><br><br><strong>Description:</strong><br>null</div>
+<button class="shadow-lg/20 px-6 py-2 sm:px-8 sm:py-3 bg-amber-500 text-white rounded-lg font-extrabold hover:scale-105 transform transition-transform text-sm sm:text-base" on:click={getIdea}>RE-ROLL</button>
+
+</div>
+<!--faq-->
 <div class="relative flex flex-col items-center p-4 sm:p-22">
 <div class="absolute inset-0 -z-10 h-full w-full bg-amber-200">
 <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
