@@ -19,6 +19,7 @@
 
 	let language = "";
 	let description = "";
+	let documentation = "";
 
 	async function getIdea() {
 		const randomNumber = Math.floor(Math.random()*20) + 1;
@@ -28,7 +29,7 @@
 				"Content-Type": "application/json"
 			},
 			body: JSON.stringify({
-				"messages": [{"role": "user", "content": `Generate a unique, creative, and uncommon project idea for a random programming language. To ensure it is randomized, use this list only: [\"JavaScript\", \"TypeScript\", \"Python\", \"Java\", \"C#\", \"C++\", \"C\", \"Go\", \"Swift\", \"Kotlin\", \"Ruby\", \"PHP\", \"Dart\", \"Rust\", \"Scala\", \"Objective-C\", \"Perl\", \"Lua\", \"R\", \"Groovy\"]. Pick the ${randomNumber} Item in the list. The project must be a practical, visual, or web-based project — NOT a purely command-line or backend-only project, and reccomended not a phone application, recommended sociel platfomrs (like discord, slack...) bots, websites, or games. DO NOT pick Haskell, Lisp, Elm, or other purely functional or academic languages. The project must take a teenager about 5+ hours and be realistic to build. Format the response ONLY as JSON in this structure: [ { \"language\": \"(the language)\", \"project\": \"(The project description)\" } ] and output absolutely nothing else, not additinal text, no nothing!.`}]
+				"messages": [{"role": "user", "content": `Generate a unique, creative, and uncommon project idea for a random programming language. To ensure it is randomized, use this list only: [\"JavaScript\", \"TypeScript\", \"Python\", \"Java\", \"C#\", \"C++\", \"C\", \"Go\", \"Swift\", \"Kotlin\", \"Ruby\", \"PHP\", \"Dart\", \"Rust\", \"Scala\", \"Objective-C\", \"Perl\", \"Lua\", \"R\", \"Groovy\"]. Pick the ${randomNumber} Item in the list. The project must be a practical, visual, or web-based project — NOT a purely command-line or backend-only project, and reccomended not a phone application, recommended sociel platfomrs (like discord, slack...) bots, websites, or games. DO NOT pick Haskell, Lisp, Elm, or other purely functional or academic languages. The project must take a teenager about 5+ hours and be realistic to build. Format the response ONLY as JSON in this structure: [ { \"language\": \"(the language)\", \"project\": \"(The project description)\", \"documentation\": \"(A link to the language documentation)\" } ] and output absolutely nothing else, not additinal text, no nothing!.`}]
 			})
 		});
 		if (!request.ok) {
@@ -40,9 +41,10 @@
 		const content = JSON.parse(contentInString);
 		language = content[0].language;
 		description = content[0].project;
+		documentation = content[0].documentation;
 		const aiTextElem = document.getElementById("aitext");
 		if (aiTextElem) {
-			aiTextElem.innerHTML = `<strong>Language:</strong><br>${language}<br><br><br><strong>Description:</strong><br>${description}`;
+			aiTextElem.innerHTML = `<strong>Language:</strong><br>${language}<br><br><br><strong>Description:</strong><br>${description}<br><br><br><strong>Documentation:</strong><br><a href="${documentation}" target="_blank">${documentation}</a></div>`;
 		}
 	}
 	onMount(() => {
@@ -95,7 +97,7 @@
 </div>
 
 <h2 class="text-3xl sm:text-4xl md:text-6xl py-6 sm:py-12 text-amber-500 font-oi text-center px-4" style="font-family: 'Oi'">PROJECT SUGGESTION</h2>
-<div id="aitext" class="py-8 text-amber-700 text-lg sm:text-2xl md:text-4xl text-center px-2" style="font-family: 'Kirang Haerang'"><strong>Language:</strong><br>null<br><br><br><strong>Description:</strong><br>null</div>
+<div id="aitext" class="py-8 text-amber-700 text-lg sm:text-2xl md:text-4xl text-center px-2" style="font-family: 'Kirang Haerang'"><strong>Language:</strong><br>null<br><br><br><strong>Description:</strong><br>null<br><br><br><strong>Documentation:</strong><br>null</div>
 <button class="shadow-lg/20 px-6 py-2 sm:px-8 sm:py-3 bg-amber-500 text-white rounded-lg font-extrabold hover:scale-105 transform transition-transform text-sm sm:text-base" on:click={getIdea}>RE-ROLL</button>
 
 </div>
