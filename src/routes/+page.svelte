@@ -66,7 +66,8 @@
 	</div>
     <div class="h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent my-4 sm:my-8 mx-auto w-3/4"></div>
 	<div class="flex flex-col sm:flex-row gap-4 items-center">
-		<button on:click={() => window.open('https://forms.fillout.com/t/tmQvxP8NzAus', '_blank')} class="shadow-lg/20 px-4 py-3 sm:px-6 sm:py-7 bg-amber-500 text-white rounded-lg font-extrabold hover:scale-105 transform transition-transform text-sm sm:text-base">RSVP HERE</button>
+		<button on:click={() => window.open('https://forms.fillout.com/t/tmQvxP8NzAus', '_blank')} class="shadow-lg/20 px-4 py-3 sm:px-6 sm:py-7 bg-amber-500 text-white rounded-lg font-extrabold hover:scale-105 transform transition-transform text-sm sm:text-base">RSVP</button>
+		<button on:click={() => window.open('https://airtable.com/appLMxBgotzQ0EQNg/pagP0Ijf9u8hCcO81/form', '_blank')} class="shadow-lg/20 px-4 py-3 sm:px-6 sm:py-7 bg-amber-500 text-white rounded-lg font-extrabold hover:scale-105 transform transition-transform text-sm sm:text-base">SUBMIT PROJECT</button>
 	</div>
 	<a class="mt-4 sm:mt-8 text-gray-600 text-sm sm:text-base transition-colors opacity-75" href="https://hackclub.slack.com/archives/C096M3EV67M" target="_blank" >Join us at <span class="text-blue-500">#dummies</span></a>
 </div>
