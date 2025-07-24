@@ -112,7 +112,9 @@
 <div class="py-8 text-amber-700 text-lg sm:text-2xl md:text-4xl text-center px-2" style="font-family: 'Kirang Haerang'">
 <strong><li>What counts as a new programming language?</li></strong><br>Any programming language that you never tried to learn, and never used for any projects<br><br><br>
 <strong><li>Can I double dip with SOM?</li></strong><br>Answer Soon...<br><br><br>
-<strong><li>What is the time requirement?</li></strong><br>At least 10 hours<br><br><br>
+<strong><li>What is the time requirement?</li></strong><br>At least 4 hours to win a grant of 20$, and another 5$ per hour (until 10 hours, maximum 50$)<br><br><br>
+<strong><li>How will I receive the prize?</li></strong><br>You will get grant for amazon books (or another alternative, based on the country) for dummies / any other learning book<br><br><br>
+<strong><li>How are you expected to learn a new programming language?</li></strong><br>Language Documentation, Tutorials, Youtube videos, AI (not for generating the code! but to teach you), Or going to the library and read a book<br><br><br>
 </div>
 </div>
 <div class="text-center text-gray-600 text-sm mt-8 pb-4">Made with &lt;3 by <a href="https://github.com/pkd2210" target="_blank" class="text-amber-600 hover:text-amber-700 underline">pkd2210</a></div>
