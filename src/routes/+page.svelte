@@ -108,7 +108,7 @@
 <div class="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
 </div>
 
-<h2 class="text-3xl sm:text-4xl md:text-6xl py-6 sm:py-12 text-amber-500 font-oi text-center px-4" style="font-family: 'Oi'">FAQ</h2>
+<h2 id="faq" class="text-3xl sm:text-4xl md:text-6xl py-6 sm:py-12 text-amber-500 font-oi text-center px-4" style="font-family: 'Oi'">FAQ</h2>
 <div class="py-8 text-amber-700 text-lg sm:text-2xl md:text-4xl text-center px-2" style="font-family: 'Kirang Haerang'">
 <strong><li>What counts as a new programming language?</li></strong><br>Any programming language that you never tried to learn, and never used for any projects<br><br><br>
 <strong><li>Can I double dip with SOM?</li></strong><br>Answer Soon...<br><br><br>
