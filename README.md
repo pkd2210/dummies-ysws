@@ -47,7 +47,15 @@ In return for doing this, we will ship you any book you want from [dummies.com](
 
 ## How do I participate?
 To participate, join the [Hack Club Slack](https://hackclub.com/slack) and head to the [#dummies-ysws](https://hackclub.slack.com/archives/C096M3EV67M) channel.  
-However, this YSWS is currently a work in progress, so please be patient as we work on it. More information will be posted in the channel soon.  
+
+### What do you need to do?
+You need to learn a new language and make a project with it!  
+You should have **never, ever** used this language before, or at least had negligible experience with it.  
+
+## The reward!
+The reward depends on your hours.
+- 4 hours for $20 grant
+- Anything above (till 10hrs) adds $5, e.g. 5hrs = $25
 
 ## More information
-For more information, you can check out the [dummies YSWS website.](https://https://dummies-ysws.vercel.app/)
+For more information, you can check out the [dummies YSWS website](https://https://dummies-ysws.vercel.app/) or join the [slack channel](https://hackclub.slack.com/archives/C096M3EV67M) and ask!
