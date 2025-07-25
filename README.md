@@ -43,10 +43,10 @@ You can preview the production build with `npm run preview`.
 
 The dummies YSWS is a YSWS (You Ship We Ship) conceptualised by [@peleg2210](https://hackclub.slack.com/team/U091DE0M4NB).  
 The aim of this YSWS is for you to learn a new language and ship a project with it.  
-In return for doing this, we will ship you any book you want from [dummies.com](https://www.dummies.com/).
+In return for doing this, we will ship you any book you want from [dummies.com](https://www.dummies.com/)(or other informational book!)
 
 ## How do I participate?
-To participate, join the [Hack Club Slack](https://hackclub.com/slack) and head to the [#dummies-ysws](https://hackclub.slack.com/archives/C096M3EV67M) channel.  
+To participate, join the [Hack Club Slack](https://hackclub.com/slack) and head to the [#dummies](https://hackclub.slack.com/archives/C096M3EV67M) channel.  
 
 ### What do you need to do?
 You need to learn a new language and make a project with it!  
@@ -58,4 +58,4 @@ The reward depends on your hours.
 - Anything above (till 10hrs) adds $5, e.g. 5hrs = $25
 
 ## More information
-For more information, you can check out the [dummies YSWS website](https://https://dummies-ysws.vercel.app/) or join the [slack channel](https://hackclub.slack.com/archives/C096M3EV67M) and ask!
+For more information, you can check out the [dummies YSWS website](https://dummies-ysws.vercel.app/) or join the [slack channel](https://hackclub.slack.com/archives/C096M3EV67M) and ask!
