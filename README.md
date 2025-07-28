@@ -58,4 +58,4 @@ The reward depends on your hours.
 - Anything above (till 10hrs) adds $5, e.g. 5hrs = $25
 
 ## More information
-For more information, you can check out the [dummies YSWS website](https://dummies-ysws.vercel.app/) or join the [slack channel](https://hackclub.slack.com/archives/C096M3EV67M) and ask!
+For more information, you can check out the [dummies YSWS website](https://dummies.hackclub.com/) or join the [slack channel](https://hackclub.slack.com/archives/C096M3EV67M) and ask!
