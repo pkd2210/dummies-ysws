@@ -37,7 +37,7 @@
 		}
 		const response = await request.json();
 		let contentInString = response.choices[0].message.content;
-		contentInString = contentInString.replace(/```json\n?/g, '').replace(/```/g, '').trim();
+		contentInString = contentInString.replace(/<think>[\s\S]*?<\/think>/g, '').replace(/```json\n?/g, '').replace(/```/g, '').trim();
 		const content = JSON.parse(contentInString);
 		language = content[0].language;
 		description = content[0].project;
